@@ -1,10 +1,10 @@
-##Tech Stacks
+## Tech Stacks
 *    Java
 *    SpringBoot
 *    JUnit
 *    Rest Assured
 *    Assertj
-##Running app
+## Running app
 1. If mvn works in console
 
     mvn clean install
@@ -17,7 +17,7 @@
 
     maven > hsbc-challenge > plugins > spring-boot > spring-boot:run
     
-##Rest endpoints description
+## Rest endpoints description
 Application runs with context /hsbc-challenge on port 7777 by default.
 
 Available endpoints:
