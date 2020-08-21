@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "74b3a4fb-d06d-40e7-9e79-2fc8dd30eb98",
+		"name": "hsbc-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\":\"test1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7777/hsbc-challenge/rest/wall/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"hsbc-challenge",
+						"rest",
+						"wall",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get wall messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/hsbc-challenge/rest/wall/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"hsbc-challenge",
+						"rest",
+						"wall",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/hsbc-challenge/rest/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"hsbc-challenge",
+						"rest",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "follow user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"followedUser\":\"ed579014-501b-4ad5-8a4f-fec8790a9329\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7777/hsbc-challenge/rest/user/followed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"hsbc-challenge",
+						"rest",
+						"user",
+						"followed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get followed users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/hsbc-challenge/rest/user/followed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"hsbc-challenge",
+						"rest",
+						"user",
+						"followed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get followed user's messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7777/hsbc-challenge/rest/wall/messages/followed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7777",
+					"path": [
+						"hsbc-challenge",
+						"rest",
+						"wall",
+						"messages",
+						"followed"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
