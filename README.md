@@ -1,4 +1,4 @@
-## Tech Stacks
+## Tech Stack
 *    Java
 *    SpringBoot
 *    JUnit
