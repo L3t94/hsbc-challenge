@@ -17,6 +17,8 @@ class MessageMapper {
     }
 
     private static MessageDTO createMessageDTO(MessageEntity messageEntity) {
-        return new MessageDTO(messageEntity.getMessage().getText(), messageEntity.getAuthor().getUuid());
+        return new MessageDTO(messageEntity.getMessage().getText(),
+                messageEntity.getAuthor().getUuid(),
+                messageEntity.getPublishedDateTime());
     }
 }
